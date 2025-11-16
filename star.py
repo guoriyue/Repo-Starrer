@@ -171,7 +171,7 @@ async def main() -> None:
     First run: Browser opens, log into GitHub manually
     Future runs: Automatically logged in
     """
-    PROFILE = Path.home() / "Library/Application Support/InverseUI/pw-profiles/github.com"
+    PROFILE = Path.home() / "Library/Application Support/pw-profiles/github.com"
     PROFILE.mkdir(parents=True, exist_ok=True)
 
     await star_user_repositories(
